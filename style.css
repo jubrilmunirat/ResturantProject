@@ -42,11 +42,10 @@ header {
     align-items: flex-start;
     justify-content: flex-end;
     gap: 2.5rem;
-    /*           to             right/left              bottom */
-    padding: 1.25rem clamp(1.25rem, 5vw, 5rem) clamp(3rem 8vw, 6rem);
+    padding: 1.25rem clamp(1.25rem, 5vw, 5rem) clamp(3rem, 8vw, 6rem);
     color: #141414;
     background-color: #f44d1c;
-    border: 0 0 28px 28px;
+    border-radius: 0 0 28px 28px;
 }
 
 /* navigation bar */
@@ -61,14 +60,13 @@ nav {
     margin-bottom: auto;
     background-color: #ffffff;
     border-radius: 999px;
-
 }
 
 .logo {
     font-family: "Space Grotesk", sans-serif;
     font-size: 1.5rem;
     font-weight: 800;
-    letter-spacing: -0.02px;
+    letter-spacing: -0.02em;
 }
 
 nav ul {
@@ -83,8 +81,7 @@ nav ul a {
     font-size: 0.95rem;
     font-weight: 500;
     border-radius: 999px;
-    transition:
-        background-color 0.2s ease, color 0.3s ease;
+    transition: background-color 0.2s ease, color 0.3s ease;
 }
 
 nav ul a:hover {
@@ -100,14 +97,13 @@ nav ul a:hover {
     gap: 2.5rem;
 }
 
-h1 {
+header h1 {
     max-width: 11ch;
     font-family: "Space Grotesk", Arial, Helvetica, sans-serif;
-    font-size: clamp(3.1rem, 10vw, 8.2rem);
-    line-height: 0.95;
+    font-size: clamp(3.2rem, 11vw, 8.5rem);
     font-weight: 800;
-    line-spacing: -0.045px;
-
+    line-height: 0.95;
+    letter-spacing: -0.045em;
 }
 
 header>a {
@@ -118,18 +114,16 @@ header>a {
     background-color: #141414;
     border-radius: 999px;
     margin-bottom: 30px;
-    transition: 0.25s ease,
-        background-color 0.2s ease,
-        color 0.3s ease;
+    transition: transform 0.25s ease, background-color 0.2s ease, color 0.3s ease;
 }
 
 header>a:hover {
     background-color: #ffffff;
     color: #141414;
-    transform: scale(1.04)
+    transform: scale(1.04);
 }
 
-/* this is the main section */
+/* main section */
 main {
     max-width: 1200px;
     margin: 0 auto;
@@ -141,57 +135,55 @@ main>h2 {
     font-size: clamp(2.75rem, 8vw, 5.5rem);
     font-weight: 800;
     margin-bottom: 4rem;
-    letter-spacing: -0.04rem;
-    line-break: 1;
+    letter-spacing: -0.04em;
+    line-height: 1;
 }
 
 section {
-    display: flex;
+    display: grid;
     grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
     gap: 2.5rem 1.75rem;
     margin-bottom: 6rem;
 }
 
-section h3 {
-    grid-column: 1/-1;
+section>h3 {
+    grid-column: 1 / -1;
     padding-bottom: 1rem;
-    font-family: "Space Grotesk";
-    font-size: clamp(1.75rem, 3.5rem, 2.5rem);
+    font-family: "Space Grotesk", sans-serif;
+    font-size: clamp(1.75rem, 3.5vw, 2.5rem);
     font-weight: 700;
     letter-spacing: -0.03em;
-    border-radius: 3px solid #141414;
+    border-bottom: 2px solid #141414;
 }
 
-section div {
+section article {
     display: flex;
     flex-direction: column;
-
 }
 
-section div img {
+section article img {
     width: 100%;
-    aspect-ratio: 1/1;
+    aspect-ratio: 1 / 1;
     object-fit: cover;
     background-color: #141414;
     border-radius: 20px;
-    transition: 0.35s ease,
-        border-radius 0.35 ease;
+    transition: transform 0.35s ease, border-radius 0.35s ease;
 }
 
-section div:hover {
+section article:hover img {
     transform: scale(0.97);
     border-radius: 28px;
 }
 
-section div h3 {
+section article h4 {
     margin-top: 1.1rem;
-    font-family: "Space Grotesk";
+    font-family: "Space Grotesk", sans-serif;
     font-size: 1.4rem;
     font-weight: 700;
     letter-spacing: -0.02em;
 }
 
-section div p {
+section article p {
     margin-top: 0.35rem;
     max-width: 38ch;
     font-size: 0.95rem;
@@ -209,7 +201,7 @@ footer {
 }
 
 /* small screen */
-@media screen and (max-width:640px) {
+@media screen and (max-width: 640px) {
     nav {
         justify-content: center;
         padding: 1rem;

@@ -4,119 +4,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Munny's Resturant </title>
+    <title>Munny's Kitchen</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap"
         rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap"
-        rel="stylesheet">
-
     <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
-    <header>
-        <!-- navigation bar -->
-        <nav>
-            <!-- logo -->
-            <h2 class="logo"> Munny's Kitchen</h2>
-            <!-- navigation links -->
+    <header id="home">
+        <nav aria-label="Main navigation">
+            <a class="logo" href="#home">Munny's Kitchen</a>
             <ul>
                 <li>
-                    <a href="#">Home</a>
+                    <a href="#home">Home</a>
                 </li>
                 <li>
-                    <a href="#">appetizer</a>
+                    <a href="#appetizers">Appetizers</a>
                 </li>
                 <li>
-                    <a href="#">Main course</a>
+                    <a href="#main-course">Main course</a>
                 </li>
                 <li>
-                    <a href="#">Desert</a>
+                    <a href="#desserts">Desserts</a>
                 </li>
             </ul>
         </nav>
 
-        <h1> Where taste meet elegance</h1>
-
-        <!-- button -->
-        <a href="#">Order Now</a>
+        <h1>Where taste meets elegance</h1>
+        <a href="#menu">Order menu</a>
     </header>
     <main>
-        <h2>Our Menu</h2>
-        <!-- Appetizers section -->
-        <section>
-            <h3>Appetizers</h3>
-            <div>
-                <img src=" ./chicken-wings.jpg" alt="Crispy Chicken Wings" />
-                <h3>Chicken wings </h3>
-                <p> crispy chicken wings season with spices and served with a tang dipping sause </p>
-            </div>
-            <div>
-                <img src="./spring-rolls.jpg" alt="Golden Spring Rolls" />
-                <h3>Spring rolls </h3>
-                <p> Golden crispy spring rolls filled with vegetables and served with a sweet and sour dipping sauce
-                </p>
-            </div>
-            <div>
-                <img src="./garlic-bread.jpg" alt="Garlic Bread" />
-                <h3>Garlic bread </h3>
-                <p> toasted bread, tapped with garlic butter, herbs and melted cheese. </p>
-            </div>
-
+        <h2 id="menu">Our Menu</h2>
+        <section id="appetizers" aria-labelledby="appetizers-heading">
+            <h3 id="appetizers-heading">Appetizers</h3>
+            <article>
+                <img src="./chicken-wings.jpg" alt="Crispy chicken wings" />
+                <h4>Chicken wings</h4>
+                <p>Crispy chicken wings seasoned with spices and served with a tangy dipping sauce.</p>
+            </article>
+            <article>
+                <img src="./spring-rolls.jpg" alt="Golden spring rolls" />
+                <h4>Spring rolls</h4>
+                <p>Golden crispy spring rolls filled with vegetables and served with a sweet and sour dipping sauce.</p>
+            </article>
+            <article>
+                <img src="./garlic-bread.jpg" alt="Garlic bread" />
+                <h4>Garlic bread</h4>
+                <p>Toasted bread topped with garlic butter, herbs, and melted cheese.</p>
+            </article>
         </section>
 
-        <!-- main course section  -->
-        <section>
-            <h3>Main Course</h3>
-            <div>
-                <img src="./grilled-chicken.jpg" alt="Grilled Chicken" />
-                <h3>Grilled Chicken </h3>
-                <p> Tender, marinated chicken grilled to perfection and served with rice and vegetables </p>
-            </div>
-            <div>
-                <img src="./jollof-rice.jpg" alt="Jollof Rice" />
-                <h3>Jollof Rice </h3>
-                <p> Nigerian-style rice cooked in a rich tomato and pepper sauce, served with fried plantain.
-                </p>
-            </div>
-            <div>
-                <img src="./beef-burger.jpg" alt="Beef Burger" />
-                <h3>Beef Burger </h3>
-                <p> A juicy beef patty topped with lettuce, tomatoes, cheese, and special sauce in a toasted bun. </p>
-            </div>
-
+        <section id="main-course" aria-labelledby="main-course-heading">
+            <h3 id="main-course-heading">Main course</h3>
+            <article>
+                <img src="./grilled-chicken.jpg" alt="Grilled chicken" />
+                <h4>Grilled chicken</h4>
+                <p>Tender, marinated chicken grilled to perfection and served with rice and vegetables.</p>
+            </article>
+            <article>
+                <img src="./jollof-rice.jpg" alt="Jollof rice" />
+                <h4>Jollof rice</h4>
+                <p>Nigerian-style rice cooked in a rich tomato and pepper sauce, served with fried plantain.</p>
+            </article>
+            <article>
+                <img src="./beef-burger.jpg" alt="Beef burger" />
+                <h4>Beef burger</h4>
+                <p>A juicy beef patty topped with lettuce, tomatoes, cheese, and special sauce in a toasted bun.</p>
+            </article>
         </section>
-        <!-- desert section -->
-        <section>
-            <h3>Desert</h3>
-            <div>
-                <img src="./chocolate-cake.jpg" alt="Chocolate Cake" />
-                <h3>Chocolate Cake </h3>
-                <p> A moist chocolate cake layered with rich chocolate frosting. </p>
-            </div>
-            <div>
-                <img src="./vanilla-ice-cream.jpg" alt="Vanilla Ice Cream" />
-                <h3>Vanilla Ice Cream </h3>
-                <p> Smooth and creamy vanilla-flavored ice cream served chilled.
-                </p>
-            </div>
-            <div>
-                <img src="./fruit-salad.jpg" alt="Fruit Salad" />
-                <h3>Fruit Salad </h3>
-                <p> A refreshing mix of fresh seasonal fruits served with a light honey dressing. </p>
-            </div>
-
+        <section id="desserts" aria-labelledby="desserts-heading">
+            <h3 id="desserts-heading">Desserts</h3>
+            <article>
+                <img src="./chocolate-cake.jpg" alt="Chocolate cake" />
+                <h4>Chocolate cake</h4>
+                <p>A moist chocolate cake layered with rich chocolate frosting.</p>
+            </article>
+            <article>
+                <img src="./vannila-icecream.jpg" alt="Vanilla ice cream" />
+                <h4>Vanilla ice cream</h4>
+                <p>Smooth and creamy vanilla-flavored ice cream served chilled.</p>
+            </article>
+            <article>
+                <img src="./fruit-salad.jpg" alt="Fruit salad" />
+                <h4>Fruit salad</h4>
+                <p>A refreshing mix of fresh seasonal fruits served with a light honey dressing.</p>
+            </article>
         </section>
     </main>
     <footer>
-        &copy; 2026 built by Jubril Munirat Yetunde.
+        &copy; 2026 Munny's Kitchen.
     </footer>
 </body>
 
